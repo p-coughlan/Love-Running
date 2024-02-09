@@ -1,41 +1,45 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
+*{
+    margin:0;
+    padding:0;
+    border:0;
 }
 
-body {
-    font-family: Lato;
-    color: #777777;
+body{
+    font-family: Lato, sans-serif;
+    color: #3a3a3a;
 }
 
-h2 {
-    font-family: Oswald;
+/* headings and logo */
+
+h1, h2{
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #555555;
+    color: #252525;
 }
 
-#logo {
+#logo{
     float: left;
     font-size: 280%;
     margin-left: 30px;
 }
 
-#menu {
+/* navigation links */
+
+#menu{
     font-size: 110%;
-    list-style-type: none;
     letter-spacing: 4px;
 }
 
-#logo, #menu {
+#logo, #menu{
     line-height: 75px;
 }
 
 #menu li {
     float: right;
+    list-style-type: none;
     margin-right: 30px;
 }
 
@@ -44,31 +48,35 @@ h2 {
     color: inherit;
 }
 
-#menu a:hover {
-    border-bottom: 1px solid #777777;
+#menu a:hover{
+    border-bottom: 1px solid #3a3a3a;
 }
 
-.active {
-    border-bottom: 1px solid #777777;
+.active{
+    border-bottom: 1px solid #3a3a3a;
 }
 
-#hero-image {
-    height: 600px;
-    width: 100%;
-    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+/* Hero image and cover text */
 
-    animation-name: hero-zoom;
-    animation-duration: 5s;
-    animation-fill-mode: forwards;
-}
-
-#hero-outer {
-    height: 600px;
+#hero-outer{
+    height:600px;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
+#hero-image{
+    height:600px;
+    width: 100%;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/main-image.png") no-repeat center center;
+
+    /* Animates zoom effect on loading the page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* Creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -77,7 +85,7 @@ h2 {
         transform: scale(1.1);
     }
 }
- 
+
 #cover-text, #cover-text h2 {
     color: #ffffff;
 }
@@ -94,19 +102,22 @@ h2 {
     padding-top: 40px;
     padding-left: 10px;
 
-    background-color: rgba(241, 109, 107, 0.7);
+    background-color: rgba(241, 109, 107, .7);
 
     bottom: 30px;
     right: 150px;
 
     position: absolute;
+
 }
 
-#club-ethos {
+/* Club ethos */
+
+#club-ethos{
     height: 600px;
 }
 
-#left-about {
+#left-about{
     padding-top: 30px;
     width: 33%;
     float: left;
@@ -124,12 +135,13 @@ h2 {
 }
 
 hr {
-    border-top: 1px solid #777777;
+    border-top: 1px solid #3a3a3a;
     width: 100%;
+    margin: 5px 0;
 }
 
 .left-about-heading {
-    width: 50%;
+    width: 60%;
     float: right;
     line-height: 20px;
     clear: both;
@@ -137,20 +149,22 @@ hr {
 }
 
 .right-about-heading {
-    width: 50%;
+    width: 60%;
     float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
 
+.right-about-heading p {
+    text-align: right;
+}
+
 .right-about-heading h2 {
     text-align: right;
 }
 
-.right-about-heading p {
-    text-align: right;
-}
+/* Club ethos center image */
 
 #welcome {
     margin: 20px 0;
@@ -170,13 +184,15 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/video-mask.png") no-repeat center center;
     height: 100%;
     border-radius: 50%;
 }
 
-#times {
-    background-image: url("http://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
+/* Event times */
+
+#times{
+    background-image: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/dublin-city.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -186,37 +202,43 @@ hr {
 
 #times div {
     color: #fafafa;
-    background-color: rgba(0, 0, 0, .6);
-    width: 19%;
+    background-color: rgba(0,0,0, .6);
+    width: 20%;
     height: 300px;
     float: left;
     padding: 30px 0 0 10px;
     text-align: center;
-    margin: 2px;
+    border: 2px solid white;
+    box-sizing: border-box;
 }
 
 #times h2 {
     color: #fafafa;
 }
 
-footer {
-    height: 150px;   
+/* Footer */
+
+footer{
+    height: 150px;
 }
 
-.social-networks {
+.social-networks{
     text-align: center;
+
 }
 
-.social-networks li {
+.social-networks li{
     display: inline;
 }
 
-.social-networks i {
+.social-networks i{
     font-size: 160%;
     margin: 1%;
     padding: 5%;
-    color: #777777;
+    color: #3a3a3a;
 }
+
+/* Gallery Photos */
 
 #photo {
     clear: both;
@@ -225,93 +247,150 @@ footer {
     column-gap: 0px;
 }
 
-#photo img {
+#photo img{
     width: 100%;
 }
 
-@media screen and (max-width: 1396px) {
-   #club-ethos{
-    width: 65%;
-    height: 1200px;
-    margin: 0 auto;
-   } 
+/* Form */
 
-   #welcome {
-    padding: 30px 0;
-    margin-top: 0;
-   }
-
-   #left-about, #right-about {
-    width: 100%;
-    float: left;
-    padding: 0;
-   }
-
-   #center-about {
-    clear: both;
-    width: 100%;
-    float: left;
-    padding: 0;
-   }
-
-   #times div {
-    width: 100%;
-    clear: both;
-    height: 150px;
-    border-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #fff;
-    padding: 0;
-   }
-
-   hr {
-    display: none;
-   }
-
+.form-section {
+    clear: left;
+    background: url("https://codeinstitute.s3.amazonaws.com/FundamentalsProjects/HTML-CSS/formbg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
 }
 
-@media screen and (max-width: 943px) {
+.signup-form {
+    margin-top: 150px;
+    color: #fff;
+    background-color:rgba(60, 60, 60, 0.6);
+    max-width: 400px;
+    position: absolute;
+    left: 10%;
+    padding: 30px;
+}
 
-    #menu {
-        clear: left;
-        float: left;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        line-height:  25px;
-    } 
+.signup-form h2 {
+    color: #fafafa;
+    margin-bottom:20px;
+}
 
-    #cover-text {
-        left: 0px;
-    }
+.text-input {
+    background: transparent;
+    color: #fafafa;
+    width: 100%;
+    height: 25px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #fafafa;
+    border-radius: 2px;
+}
 
-    #club-ethos {
-        width: 90%;
+.text-input:hover {
+    border-color: #f16c6b;
+}
+
+.join-button {
+    margin-top:20px;
+    border-radius: 2px;
+    padding: 15px 32px 15px 32px;
+    text-align: center;
+    font-size: 100%;
+    background-color: #f16c6b;
+    color: #fafafa;
+    display: block;
+}
+
+.join-button:hover {
+    background-color: #fafafa;
+    color:  #f16c6b;
+}
+
+
+
+/* Media queries */
+
+/* For large to medium screens sizes from 1200px wide and down */
+@media screen and (max-width: 1200px){
+    #club-ethos{
+        width: 65%;
         height: 1200px;
         margin: 0 auto;
     }
 
-    .left-about-heading, .right-about-heading {
-        width: inherit;
-    } 
+    #welcome {
+        padding: 30px 0;
+        margin-top: 0;
+    }
 
-    .left-about-heading h2, .right-about-heading h2 {
+    #left-about, #right-about {
+        width:100%;
+        float:left;
+        padding: 0;
+    }
+
+    #center-about{
+        clear: both;
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+
+    #times div {
+        width: 100%;
+        clear: both;
+        height: 150px;
+        padding: 0;
+    }
+
+    hr {
+        display: none;
+    }
+}
+
+/* For medium screens sizes from 950px wide and down */
+@media screen and (max-width: 950px){
+
+    #menu{
+        clear: left;
+        float: left;
+        margin-left: 30px; 
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+
+    #cover-text{
+        left:0px;
+    }
+
+    #club-ethos{
+        width:90%;
+        height: 1200px;
+        margin: 0 auto;
+    }
+
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+
+    .left-about-heading h2, .right-about-heading h2{
         width: 100%;
         text-align: center;
     }
 
-    .left-about-heading p, .right-about-heading p {
+    .left-about-heading p, .right-about-heading p{
         text-align: center;
         padding: 0 20px 0 20px;
     }
 
-    #photo {
+    #photo{
         column-count: 3;
     }
-
 }
 
-@media screen and (max-width: 800px) {
-    #photo {
+/* For small screens sizes from 800px wide and down */
+@media screen and (max-width: 800px){
+    #photo{
         column-count: 2;
     }
 }
