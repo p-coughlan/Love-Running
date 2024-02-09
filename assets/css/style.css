@@ -254,6 +254,16 @@ footer {
     padding: 0;
    }
 
+   #times div {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    border-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #fff;
+    padding: 0;
+   }
+
    hr {
     display: none;
    }
@@ -294,4 +304,14 @@ footer {
         padding: 0 20px 0 20px;
     }
 
+    #photo {
+        column-count: 3;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    #photo {
+        column-count: 2;
+    }
 }
